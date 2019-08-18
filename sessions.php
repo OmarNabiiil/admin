@@ -130,7 +130,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                                     <thead>
                                     <tr>
                                         <th> أسم الحصة</th>
-                                        <th>السنتر</th>
                                         <th>المجموعة</th>
                                         <th>التاريخ</th>
                                     </tr>
@@ -138,7 +137,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                                     <tfoot>
                                     <tr>
                                         <th> أسم الحصة</th>
-                                        <th>السنتر</th>
                                         <th>المجموعة</th>
                                         <th>التاريخ</th>
                                     </tr>
@@ -215,8 +213,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                 },
                 "columns": [
                     { "data": "session_name" },
-                    { "data": "name" },
-                    { "data": "group_no" },
+                    { "data": "group_name" },
                     { "data": "date" }
                 ],
                 "language":{
@@ -246,7 +243,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                 url:"https://3assal.net/scripts/getAllGroups.php",
                 crossDomain: true,
                 method:'GET',
-                crossDomain: true,
                 contentType:false,
                 processData:false,
                 success:function(data)
@@ -261,7 +257,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                     dropdown.append( $('<option value="0">إختر ...</option>') );
                     //append the values to the drop down
                     jQuery.each( js, function(i, v) {
-                        dropdown.append( $('<option value="'+ v.id +'">'+ v.group_no +'</option>') );
+                        dropdown.append( $('<option value="'+ v.id +'">'+ v.name+' - '+v.location+' - ' + v.time +'</option>') );
                     });
                 },
                 error:function(result){
@@ -280,51 +276,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                 //append the values to the drop down
                 jQuery.each( data, function(i, v) {
                     dropdown.append( $('<option value="'+ v.id +'">'+ v.group_no +'</option>') );
-                });
-            });*/
-        });
-
-        $(document).on('click', '.addSessionButton', function(){
-            
-            $.ajax({
-                url:"https://3assal.net/scripts/getAllCenters.php",
-                crossDomain: true,
-                method:'GET',
-                crossDomain: true,
-                contentType:false,
-                processData:false,
-                success:function(data)
-                {
-                    var dropdown = $('#inputCenter');
-        
-                    var js = JSON.parse(data);
-                    //alert(js.data);
-                    //empty out the existing options
-                    dropdown.empty();
-        
-                    dropdown.append( $('<option value="0">إختر ...</option>') );
-                    //append the values to the drop down
-                    jQuery.each( js, function(i, v) {
-                        dropdown.append( $('<option value="'+ v.id +'">'+ v.name +'</option>') );
-                    });
-                },
-                error:function(result){
-                    //document.getElementById('action').style.visibility = 'visible';
-                    alert("process failed!");
-                }
-            });
-
-            /*jQuery.getJSON( "http://3assal.net/scripts/getAllCenters.php", function( data ) {
-
-                var dropdown = $('#inputCenter');
-
-                //alert(JSON.parse(data));
-                //empty out the existing options
-                dropdown.empty();
-
-                //append the values to the drop down
-                jQuery.each( data, function(i, v) {
-                    dropdown.append( $('<option value="'+ v.id +'">'+ v.name +'</option>') );
                 });
             });*/
         });
