@@ -241,7 +241,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                                     <thead>
                                     <tr>
                                         <th>الإسم</th>
-                                        <th>البريد الإلكتروني</th>
+                                        <th>الكود</th>
                                         <th>رقم الهاتف</th>
                                         <th>خصم</th>
                                         <th>التفاصيل</th>
@@ -250,7 +250,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                                     <tfoot>
                                     <tr>
                                         <th>الإسم</th>
-                                        <th>البريد الإلكتروني</th>
+                                        <th>الكود</th>
                                         <th>رقم الهاتف</th>
                                         <th>خصم</th>
                                         <th>التفاصيل</th>
@@ -306,9 +306,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                 inputLastName: {
                     required: true
                 },
-                inputEmail: {
-                    required:true
-                },
                 inputSchool: {
                     required:true
                 },
@@ -324,9 +321,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                 },
                 inputLastName: {
                     required: "يجب إدخال الإسم الإخير"
-                },
-                inputEmail: {
-                    required: "يجب إدخال البريد الإلكتروني"
                 },
                 inputSchool: {
                     required: "يجب إدخال إسم المدرسة"
@@ -353,8 +347,8 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                     type:"POST"
                 },
                 "columns": [
-                    { "data": "first_name" },
-                    { "data": "email" },
+                    { "data": "full_name" },
+                    { "data": "student_no" },
                     { "data": "mobile" },
                     { "data": "discount" },
                     { "data": "action" }
