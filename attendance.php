@@ -244,7 +244,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
 
         $(document).on('submit', '#addStudentAttendanceModal', function(event){
             event.preventDefault();
-            let form = document.querySelector('#addUserForm');
+            let form = document.querySelector('#addStudentAttendanceForm');
             //$('#action').modal('hide');
             $.ajax({
                 url:"https://3assal.net/scripts/addStudentAttendance.php",
