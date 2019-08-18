@@ -94,14 +94,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                             <br />
                         </div>
 
-                        <div class="form-group col-md-4">
-                            <label for="inputCenter">السنتر</label>
-                            <select name="inputCenter" id="inputCenter" class="form-control">
-                                <option selected>إختر ...</option>
-                                <option>...</option>
-                            </select>
-                        </div>
-
                         <!--
 
                         <h5>أو</h5><br />
@@ -138,6 +130,11 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                         <div class="form-group">
                             <label for="inputGuestName">إسم الطالب</label>
                             <input type="text" name="inputGuestName" id="inputGuestName" class="form-control" />
+                            <br />
+                        </div>
+                        <div class="form-group">
+                            <label for="inputGuestMobile">هاتف الطالب</label>
+                            <input type="number" name="inputGuestMobile" id="inputGuestMobile" class="form-control" />
                             <br />
                         </div>
 
@@ -245,58 +242,12 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             })
         });
 
-
-        $(document).on('click', '.addStudentAttendanceButton', function(){
-            
-            $.ajax({
-                url:"https://3assal.net/scripts/getAllCenters.php",
-                crossDomain: true,
-                method:'GET',
-                crossDomain: true,
-                contentType:false,
-                processData:false,
-                success:function(data)
-                {
-                    var dropdown = $('#inputCenter');
-        
-                    var js = JSON.parse(data);
-                    //alert(js.data);
-                    //empty out the existing options
-                    dropdown.empty();
-        
-                    dropdown.append( $('<option value="0">إختر ...</option>') );
-                    //append the values to the drop down
-                    jQuery.each( js, function(i, v) {
-                        dropdown.append( $('<option value="'+ v.id +'">'+ v.name +'</option>') );
-                    });
-                },
-                error:function(result){
-                    //document.getElementById('action').style.visibility = 'visible';
-                    alert("process failed!");
-                }
-            });
-
-            /*jQuery.getJSON( "http://3assal.net/scripts/getAllCenters.php", function( data ) {
-
-                var dropdown = $('#inputCenter');
-
-                //alert(JSON.parse(data));
-                //empty out the existing options
-                dropdown.empty();
-
-                //append the values to the drop down
-                jQuery.each( data, function(i, v) {
-                    dropdown.append( $('<option value="'+ v.id +'">'+ v.name +'</option>') );
-                });
-            });*/
-        });
-
         $(document).on('submit', '#addStudentAttendanceModal', function(event){
             event.preventDefault();
             let form = document.querySelector('#addUserForm');
             //$('#action').modal('hide');
             $.ajax({
-                url:"https://3assal.net/scripts/addStudent.php",
+                url:"https://3assal.net/scripts/addStudentAttendance.php",
                 crossDomain: true,
                 method:'POST',
                 data: new FormData(form),
@@ -307,6 +258,32 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                     alert(data);
                     $('#addStudentAttendanceModal')[0].reset();
                     $('#addStudentAttendanceModal').modal('hide');
+                    reloadData();
+                    //dataTable.ajax.reload();
+                },
+                error:function(result){
+                    //document.getElementById('action').style.visibility = 'visible';
+                    alert("process failed!");
+                }
+            });
+        });
+
+        $(document).on('submit', '#addGuestAttendanceModal', function(event){
+            event.preventDefault();
+            let form = document.querySelector('#addGuestAttendanceForm');
+            //$('#action').modal('hide');
+            $.ajax({
+                url:"https://3assal.net/scripts/addGuestAttendance.php",
+                crossDomain: true,
+                method:'POST',
+                data: new FormData(form),
+                contentType:false,
+                processData:false,
+                success:function(data)
+                {
+                    alert(data);
+                    $('#addGuestAttendanceModal')[0].reset();
+                    $('#addGuestAttendanceModal').modal('hide');
                     reloadData();
                     //dataTable.ajax.reload();
                 },
