@@ -5,6 +5,8 @@ if ( !isset( $_SESSION['user_id'] ) ) {
     header("Location: index.html");
 }
 ?>
+
+<?php header('Access-Control-Allow-Origin: *'); ?>
 <!DOCTYPE html>
 <html>
 
