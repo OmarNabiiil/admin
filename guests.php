@@ -72,7 +72,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                     <div class="col-lg-12 mb-4">
                         <div class="card">
                             <div class="card-header">
-                                <h6 class="text-right mb-0">الحصص</h6>
+                                <h6 class="text-right mb-0">الزائرين</h6>
                             </div>
                             <div class="card-body">
                                 <table id="example" class="display" style="width:100%">
