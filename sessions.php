@@ -89,14 +89,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                             </select>
                         </div>
 
-                        <div class="form-group col-md-4">
-                            <label for="inputCenter">السنتر</label>
-                            <select name="inputCenter" id="inputCenter" class="form-control">
-                                <option selected>إختر ...</option>
-                                <option>...</option>
-                            </select>
-                        </div>
-
                         <br/>
 
                         <button id="addSessionActionButton" type="submit" class="btn btn-primary">إضافة</button>
@@ -257,7 +249,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                     dropdown.append( $('<option value="0">إختر ...</option>') );
                     //append the values to the drop down
                     jQuery.each( js, function(i, v) {
-                        dropdown.append( $('<option value="'+ v.id +'">'+ v.name+' - '+v.location+' - ' + v.time +'</option>') );
+                        dropdown.append( $('<option value="'+ v.id +'">'+ v.name - v.location -  v.time +'</option>') );
                     });
                 },
                 error:function(result){
