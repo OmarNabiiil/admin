@@ -69,12 +69,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             <section class="py-5">
 
                 <div class="row">
-                    <div class="col-lg-2 mb-4">
-                        <button id="addSessionButton" class="btn btn-primary addSessionButton" data-toggle="modal" data-target="#addSessionModal">إضافة حصة</button>
-                    </div>
-                </div>
-
-                <div class="row">
                     <div class="col-lg-12 mb-4">
                         <div class="card">
                             <div class="card-header">
