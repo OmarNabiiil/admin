@@ -157,6 +157,8 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                                     <tr>
                                         <th>رقم المجموعة</th>
                                         <th>إسم السنتر</th>
+                                        <th>عنوان السنتر</th>
+                                        <th>ميعاد الحصة</th>
                                         <th>التفاصيل</th>
                                     </tr>
                                     </thead>
@@ -164,6 +166,8 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                                     <tr>
                                         <th>رقم المجموعة</th>
                                         <th>إسم السنتر</th>
+                                        <th>عنوان السنتر</th>
+                                        <th>ميعاد الحصة</th>
                                         <th>التفاصيل</th>
                                     </tr>
                                     </tfoot>
@@ -219,6 +223,8 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                 "columns": [
                     { "data": "group_no" },
                     { "data": "name" },
+                    { "data": "location" },
+                    { "data": "time" },
                     { "data": "action" }
                 ],
                 "language":{
