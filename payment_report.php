@@ -208,7 +208,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
 
     $(document).ready( function () {
 
-        let x = document.getElementById("myDIV");
+        var x = document.getElementById("myDIV");
         x.style.display = "none";
 
         let modal = $('#passwordModal');
