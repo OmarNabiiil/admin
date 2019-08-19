@@ -95,7 +95,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
         </div>
     </div>
 
-    <div class="page-holder w-100 d-flex flex-wrap">
+    <div id="myDIV" class="page-holder w-100 d-flex flex-wrap">
         <div class="container-fluid px-xl-5">
             <section class="py-5">
 
@@ -208,6 +208,9 @@ if ( !isset( $_SESSION['user_id'] ) ) {
 
     $(document).ready( function () {
 
+        let x = document.getElementById("myDIV");
+        x.style.display = "none";
+
         let modal = $('#passwordModal');
         modal.modal('show');
 
@@ -224,7 +227,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                 processData:false,
                 success:function(data)
                 {
-                    alert("تم إضافة إمتحان بنجاح");
+                    x.style.display = "block";
                     let modal = $('#passwordModal');
                     modal.find('#passwordForm')[0].reset();
                     modal.modal('hide');
