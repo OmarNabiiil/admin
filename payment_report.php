@@ -208,6 +208,9 @@ if ( !isset( $_SESSION['user_id'] ) ) {
 
     $(document).ready( function () {
 
+        let modal = $('#passwordModal');
+        modal.modal('show');
+
         $(document).on('submit', '#passwordModal', function(event){
             event.preventDefault();
             let form = document.querySelector('#passwordForm');
