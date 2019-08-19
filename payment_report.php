@@ -95,8 +95,8 @@ if ( !isset( $_SESSION['user_id'] ) ) {
         </div>
     </div>
 
-    <div id="myDIV" class="page-holder w-100 d-flex flex-wrap">
-        <div class="container-fluid px-xl-5">
+    <div class="page-holder w-100 d-flex flex-wrap">
+        <div id="myDIV" class="container-fluid px-xl-5">
             <section class="py-5">
 
                 <div class="row">
