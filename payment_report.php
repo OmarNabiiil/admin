@@ -81,7 +81,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
 
                         <div class="form-group">
                             <label for="password">كلمة السر</label>
-                            <input type="password" name="password" placeholder="كلمة السر" class="form-control border-0 shadow form-control-lg text-violet">
+                            <input type="password" id="password" name="password" placeholder="كلمة السر" class="form-control border-0 shadow form-control-lg text-violet">
                         </div>
 
                         <br/>
