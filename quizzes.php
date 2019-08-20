@@ -248,6 +248,12 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             dateFormat: "yy-mm-dd"
         });
 
+        var x = document.getElementById("myDIV");
+        x.style.display = "none";
+
+        let modal = $('#passwordModal');
+        modal.modal('show');
+
         $(document).on('submit', '#passwordModal', function(event){
             event.preventDefault();
             var pass = $("#password").val();
