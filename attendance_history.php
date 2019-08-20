@@ -68,8 +68,36 @@ if ( !isset( $_SESSION['user_id'] ) ) {
 
     </div>
 
+    <div class="modal" dir="rtl" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="passwordModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="passwordModalLabel">كلمة السر</h5>
+                    <button type="button" class="close" data-dismiss="modal" style="margin-left: 0" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="passwordForm" action="#" role="form" method="post" class="passwordForm" enctype="multipart/form-data">
+
+                        <div class="form-group">
+                            <label for="password">كلمة السر</label>
+                            <input type="password" id="password" name="password" placeholder="كلمة السر" class="form-control border-0 shadow form-control-lg text-violet">
+                        </div>
+
+                        <br/>
+                        <hr/>
+
+                        <button id="passwordButtonAction" type="submit" class="btn btn-primary">دخول</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="page-holder w-100 d-flex flex-wrap">
-        <div class="container-fluid px-xl-5">
+        <div id="myDIV" class="container-fluid px-xl-5">
             <section class="py-5">
 
                 <div class="row">
@@ -177,6 +205,17 @@ if ( !isset( $_SESSION['user_id'] ) ) {
     }
 
     $(document).ready( function () {
+        $(document).on('submit', '#passwordModal', function(event){
+            event.preventDefault();
+            var pass = $("#password").val();
+            if (pass === '1234'){
+                getAllSessions();
+                x.style.display = "block";
+                $('#passwordModal').modal('hide');
+            }
+            //$('#action').modal('hide');
+
+        });
         getAllSessions();
 
         $(document).on('click', '.pay', function(){

@@ -216,7 +216,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
         $(document).on('submit', '#passwordModal', function(event){
             event.preventDefault();
             var pass = $("#password").val();
-            alert(pass);
             if (pass === '1234'){
                 getAllSessions();
                 x.style.display = "block";
