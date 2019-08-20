@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84351c13-2239-438a-b062-84f4fdff1c67" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/payment_report.php" beforeDir="false" afterPath="$PROJECT_DIR$/payment_report.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/payment_report.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="210" column="25" selection-start-line="210" selection-start-column="25" selection-end-line="210" selection-end-column="25" />
+            <state relative-caret-position="408">
+              <caret line="212" column="23" selection-start-line="212" selection-start-column="23" selection-end-line="212" selection-end-column="23" />
               <folding>
                 <element signature="e#6934#8630#0#HTML" />
               </folding>
@@ -129,7 +128,7 @@
       <option name="presentableId" value="Default" />
       <updated>1566153163948</updated>
       <workItem from="1566153165220" duration="5922000" />
-      <workItem from="1566203004071" duration="4169000" />
+      <workItem from="1566203004071" duration="4421000" />
     </task>
     <task id="LOCAL-00001" summary="initial deployment">
       <created>1566153467408</created>
@@ -285,11 +284,25 @@
       <option name="project" value="LOCAL" />
       <updated>1566292784115</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="testing the password">
+      <created>1566294781284</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1566294781284</updated>
+    </task>
+    <task id="LOCAL-00024" summary="testing the password">
+      <created>1566294915517</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1566294915517</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10091000" />
+    <option name="totallyTimeSpent" value="10343000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -417,8 +430,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/payment_report.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="210" column="25" selection-start-line="210" selection-start-column="25" selection-end-line="210" selection-end-column="25" />
+        <state relative-caret-position="408">
+          <caret line="212" column="23" selection-start-line="212" selection-start-column="23" selection-end-line="212" selection-end-column="23" />
           <folding>
             <element signature="e#6934#8630#0#HTML" />
           </folding>
