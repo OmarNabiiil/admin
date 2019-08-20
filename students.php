@@ -343,8 +343,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             {
                 "processing": true,
                 "ajax":{
-                    url:"https://3assal.net/scripts/getAllStudents.php",
-                    crossDomain: true,
+                    url:"http://3assal.net/scripts/getAllStudents.php",
                     type:"POST"
                 },
                 "columns": [
@@ -502,7 +501,8 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             let form = document.querySelector('#addUserForm');
             //$('#action').modal('hide');
             $.ajax({
-                url:"http://3assal.net/scripts/addStudent.php",
+                url:"https://3assal.net/scripts/addStudent.php",
+                crossDomain: true,
                 method:'POST',
                 data: new FormData(form),
                 contentType:false,
