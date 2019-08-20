@@ -343,7 +343,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             {
                 "processing": true,
                 "ajax":{
-                    url:"http://3assal.net/scripts/getAllStudents.php",
+                    url:"https://3assal.net/scripts/getAllStudents.php",
                     type:"POST"
                 },
                 "columns": [
