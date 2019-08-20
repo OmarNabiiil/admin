@@ -104,9 +104,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                         <label for="inputGroup">الحصة</label>
                         <select onchange="getPaymentData(this)" id="inputGroup" name="inputGroup" class="form-control">
                             <option value="0">-Select-</option>
-                            <option value="1">Communication</option>
-                            <option value="2">Network</option>
-                            <option value="3">Communication</option>
                         </select>
                     </div>
 
