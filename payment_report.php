@@ -208,14 +208,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
 
     $(document).ready( function () {
 
-        $( "#passwordForm" ).validate({
-            rules: {
-                password: "required",
-                password: {
-                    equalTo: "1234"
-                }
-            }
-        });
+        //getAllSessions();
 
         var x = document.getElementById("myDIV");
         x.style.display = "none";
@@ -227,7 +220,8 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             event.preventDefault();
             val pass = $("#password").val();
             if (pass == '1234'){
-
+                getAllSessions();
+                $('#passwordModal').modal('hide');
             }
             //$('#action').modal('hide');
 
