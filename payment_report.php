@@ -71,7 +71,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="passwordModalLabel">إضافة إمتحان</h5>
+                    <h5 class="modal-title" id="passwordModalLabel">كلمة السر</h5>
                     <button type="button" class="close" data-dismiss="modal" style="margin-left: 0" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -208,6 +208,15 @@ if ( !isset( $_SESSION['user_id'] ) ) {
 
     $(document).ready( function () {
 
+        $( "#passwordForm" ).validate({
+            rules: {
+                password: "required",
+                password: {
+                    equalTo: "1234"
+                }
+            }
+        });
+
         var x = document.getElementById("myDIV");
         x.style.display = "none";
 
@@ -216,29 +225,12 @@ if ( !isset( $_SESSION['user_id'] ) ) {
 
         $(document).on('submit', '#passwordModal', function(event){
             event.preventDefault();
-            let form = document.querySelector('#passwordForm');
-            //$('#action').modal('hide');
-            $.ajax({
-                url:"https://3assal.net/scripts/addQuiz.php",
-                crossDomain: true,
-                method:'POST',
-                data: new FormData(form),
-                contentType:false,
-                processData:false,
-                success:function(data)
-                {
-                    x.style.display = "block";
-                    let modal = $('#passwordModal');
-                    modal.find('#passwordForm')[0].reset();
-                    modal.modal('hide');
+            val pass = $("#password").val();
+            if (pass == '1234'){
 
-                    getAllSessions();
-                },
-                error:function(result){
-                    //document.getElementById('action').style.visibility = 'visible';
-                    alert("process failed!");
-                }
-            });
+            }
+            //$('#action').modal('hide');
+
         });
 
     });

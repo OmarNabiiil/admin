@@ -502,10 +502,8 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             let form = document.querySelector('#addUserForm');
             //$('#action').modal('hide');
             $.ajax({
-                url:"https://3assal.net/scripts/addStudent.php",
-                crossDomain: true,
+                url:"http://3assal.net/scripts/addStudent.php",
                 method:'POST',
-                crossDomain: true,
                 data: new FormData(form),
                 contentType:false,
                 processData:false,
