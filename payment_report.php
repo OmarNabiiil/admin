@@ -215,9 +215,11 @@ if ( !isset( $_SESSION['user_id'] ) ) {
 
         $(document).on('submit', '#passwordModal', function(event){
             event.preventDefault();
+            alert(pass);
             var pass = $("#password").val();
             if (pass === '1234'){
                 getAllSessions();
+                x.style.display = "block";
                 $('#passwordModal').modal('hide');
             }
             //$('#action').modal('hide');
