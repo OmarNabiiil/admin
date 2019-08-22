@@ -438,7 +438,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                     dropdown.append( $('<option value="0">إختر ...</option>') );
                     //append the values to the drop down
                     jQuery.each( js, function(i, v) {
-                        dropdown.append( $('<option value="'+ v.id +'">'+ v.group_no +'</option>') );
+                        dropdown.append( $('<option value="'+ v.id +'">'+ v.name +' - '+ v.location +' - '+  v.time +'</option>') );
                     });
                 },
                 error:function(result){
