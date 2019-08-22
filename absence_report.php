@@ -183,6 +183,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                 "ajax":{
                     url:"https://3assal.net/scripts/fetchAbsentStudents.php",
                     type:"GET",
+                    "bDestroy": true,
                     data: {
                         "session_id": session_id
                     }
