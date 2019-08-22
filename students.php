@@ -423,7 +423,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             
             $.ajax({
                 url:"https://3assal.net/scripts/getAllGroups.php",
-                crossDomain: true,
                 method:'GET',
                 contentType:false,
                 processData:false,
@@ -477,7 +476,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             //$('#action').modal('hide');
             $.ajax({
                 url:"https://3assal.net/scripts/addDiscountForStudent.php",
-                crossDomain: true,
                 method:'POST',
                 data: new FormData(form),
                 contentType:false,
@@ -498,9 +496,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             //alert(user_id);
             $.ajax({
                 url:"https://3assal.net/scripts/getStudentMarksAndDetails.php",
-                crossDomain: true,
                 method:"POST",
-                crossDomain: true,
                 data:{user_id:user_id},
                 dataType:"json",
                 success:function(data)
@@ -548,7 +544,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             //$('#action').modal('hide');
             $.ajax({
                 url:"https://3assal.net/scripts/addStudent.php",
-                crossDomain: true,
                 method:'POST',
                 data: new FormData(form),
                 contentType:false,
