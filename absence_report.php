@@ -241,7 +241,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                 }
             });
 
-        $('#exampless').change(function() {
+        $('#inputSession').change(function() {
             dataTable.ajax.reload();
         } );
 
