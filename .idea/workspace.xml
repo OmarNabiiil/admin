@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="84351c13-2239-438a-b062-84f4fdff1c67" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/absence_report.php" beforeDir="false" afterPath="$PROJECT_DIR$/absence_report.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/absence_report.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="174" column="8" selection-start-line="174" selection-start-column="8" selection-end-line="174" selection-end-column="8" />
+            <state relative-caret-position="166">
+              <caret line="217" column="21" lean-forward="true" selection-start-line="217" selection-start-column="21" selection-end-line="217" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#a#0;n#li#10;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -187,7 +186,7 @@
       <workItem from="1566153165220" duration="5922000" />
       <workItem from="1566203004071" duration="8750000" />
       <workItem from="1566337692512" duration="146000" />
-      <workItem from="1566456637404" duration="2721000" />
+      <workItem from="1566456637404" duration="3246000" />
     </task>
     <task id="LOCAL-00001" summary="initial deployment">
       <created>1566153467408</created>
@@ -434,11 +433,32 @@
       <option name="project" value="LOCAL" />
       <updated>1566465259733</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="add absence students report page">
+      <created>1566466428158</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1566466428158</updated>
+    </task>
+    <task id="LOCAL-00037" summary="add absence students report page">
+      <created>1566466516933</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1566466516933</updated>
+    </task>
+    <task id="LOCAL-00038" summary="add absence students report page">
+      <created>1566466762803</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1566466762803</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17539000" />
+    <option name="totallyTimeSpent" value="18064000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -593,8 +613,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/absence_report.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="174" column="8" selection-start-line="174" selection-start-column="8" selection-end-line="174" selection-end-column="8" />
+        <state relative-caret-position="166">
+          <caret line="217" column="21" lean-forward="true" selection-start-line="217" selection-start-column="21" selection-end-line="217" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#span#0;n#a#0;n#li#10;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
