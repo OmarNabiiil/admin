@@ -214,6 +214,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                     type:"GET",
                     data:function ( d ) {
                         d.session_id = $('#inputSession').val();
+                        alert($('#inputSession').val());
                     }
                 },
                 "columns": [
