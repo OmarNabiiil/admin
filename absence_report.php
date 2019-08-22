@@ -213,7 +213,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                     url:"https://3assal.net/scripts/fetchAbsentStudents.php",
                     type:"GET",
                     data:function ( d ) {
-                        if ($('#inputSession').val() === 0){
+                        if ($('#inputSession').val() == 0){
                             d.session_id = "";
                         }else{
                             d.session_id = $('#inputSession').val();
