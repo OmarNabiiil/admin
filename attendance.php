@@ -63,15 +63,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             <li class="sidebar-list-item"><a href="quizzes.php" class="sidebar-link text-muted"><i class="o-survey-1 mr-3 text-gray"></i><span style="margin-right: 8px">الإمتحانات</span></a></li>
             <li class="sidebar-list-item"><a href="attendance.php" class="sidebar-link text-muted active"><i class="o-survey-1 mr-3 text-gray"></i><span style="margin-right: 8px">الحضور</span></a></li>
             <li class="sidebar-list-item"><a href="attendance_history.php" class="sidebar-link text-muted"><i class="o-survey-1 mr-3 text-gray"></i><span style="margin-right: 8px">تقرير الحضور</span></a></li>
-            <!--<li class="sidebar-list-item"><a href="#" data-toggle="collapse" data-target="#pages" aria-expanded="false" aria-controls="pages" class="sidebar-link text-muted"><i class="o-wireframe-1 mr-3 text-gray"></i><span style="margin-right: 8px">الحضور</span></a>
-                <div id="pages" class="collapse">
-                    <ul class="sidebar-menu list-unstyled border-left border-primary border-thick">
-                        <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted pl-lg-5">تسجيل حضور الطلاب</a></li>
-                        <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted pl-lg-5">Students</a></li>
-                    </ul>
-                </div>
-            </li>-->
-
+            <li class="sidebar-list-item"><a href="absence_report.php" class="sidebar-link text-muted "><i class="o-survey-1 mr-3 text-gray"></i><span style="margin-right: 8px">تقرير الغياب</span></a></li>
         </ul>
 
     </div>

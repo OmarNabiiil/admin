@@ -12,7 +12,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>عسل - الحضور</title>
+    <title>عسل - الغياب</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -62,7 +62,8 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             <li class="sidebar-list-item"><a href="sessions.php" class="sidebar-link text-muted "><i class="o-survey-1 mr-3 text-gray"></i><span style="margin-right: 8px">الحصص</span></a></li>
             <li class="sidebar-list-item"><a href="quizzes.php" class="sidebar-link text-muted"><i class="o-survey-1 mr-3 text-gray"></i><span style="margin-right: 8px">الإمتحانات</span></a></li>
             <li class="sidebar-list-item"><a href="attendance.php" class="sidebar-link text-muted"><i class="o-survey-1 mr-3 text-gray"></i><span style="margin-right: 8px">الحضور</span></a></li>
-            <li class="sidebar-list-item"><a href="attendance_history.php" class="sidebar-link text-muted active"><i class="o-survey-1 mr-3 text-gray"></i><span style="margin-right: 8px">تقرير الحضور</span></a></li>
+            <li class="sidebar-list-item"><a href="attendance_history.php" class="sidebar-link text-muted"><i class="o-survey-1 mr-3 text-gray"></i><span style="margin-right: 8px">تقرير الحضور</span></a></li>
+            <li class="sidebar-list-item"><a href="absence_report.php" class="sidebar-link text-muted active"><i class="o-survey-1 mr-3 text-gray"></i><span style="margin-right: 8px">تقرير الغياب</span></a></li>
 
         </ul>
 
@@ -111,9 +112,31 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                 </div>
 
                 <div class="row">
-                    <div id="data" class="col-lg-12 mb-4">
+                    <div class="col-lg-12 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h6 class="text-right mb-0">الطلاب الغائبين</h6>
+                            </div>
+                            <div class="card-body">
+                                <table id="exampless" class="display" style="width:100%">
+                                    <thead>
+                                    <tr>
+                                        <th>الإسم</th>
+                                        <th>الكود</th>
+                                        <th>رقم الهاتف</th>
+                                    </tr>
+                                    </thead>
+                                    <tfoot>
+                                    <tr>
+                                        <th>الإسم</th>
+                                        <th>الكود</th>
+                                        <th>رقم الهاتف</th>
+                                    </tr>
+                                    </tfoot>
 
-
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -154,17 +177,47 @@ if ( !isset( $_SESSION['user_id'] ) ) {
     }
 
     function fetchSessionDataFromServer(session_id) {
-        var url = "https://3assal.net/scripts/fetchSessionReport.php?session_id=" + session_id;
-        jQuery("#data").load(url);
+        var dataTable = $('#exampless').DataTable(
+            {
+                "processing": true,
+                "ajax":{
+                    url:"https://3assal.net/scripts/fetchAbsentStudents.php",
+                    type:"GET",
+                    data: {
+                        "session_id": session_id
+                    }
+                },
+                "columns": [
+                    { "data": "full_name" },
+                    { "data": "student_no" },
+                    { "data": "mobile" }
+
+                ],
+                "language":{
+                    "sProcessing":   "جارٍ التحميل...",
+                    "sLengthMenu":   "أظهر _MENU_ مدخلات",
+                    "sZeroRecords":  "لم يعثر على أية سجلات",
+                    "sInfo":         "إظهار _START_ إلى _END_ من أصل _TOTAL_ مدخل",
+                    "sInfoEmpty":    "يعرض 0 إلى 0 من أصل 0 سجل",
+                    "sInfoFiltered": "(منتقاة من مجموع _MAX_ مُدخل)",
+                    "sInfoPostFix":  "",
+                    "sSearch":       "ابحث :  ",
+                    "sUrl":          "",
+                    "oPaginate": {
+                        "sFirst":    "الأول",
+                        "sPrevious": "السابق",
+                        "sNext":     "التالي",
+                        "sLast":     "الأخير"
+                    }
+                }
+            });
     }
 
     function getAllSessions(){
 
         $.ajax({
             url:"https://3assal.net/scripts/getAllSessions.php",
-            crossDomain: true,
             method:'GET',
-            crossDomain: true,
             contentType:false,
             processData:false,
             success:function(data)
@@ -187,21 +240,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                 alert("process failed!");
             }
         });
-
-        /*jQuery.getJSON( "https://3assal.net/scripts/getAllSessions.php", function( data ) {
-
-            var dropdown = $('#inputGroup');
-
-            //alert(JSON.parse(data));
-            //empty out the existing options
-            dropdown.empty();
-
-            dropdown.append( $('<option value="0">إختر ...</option>') );
-            //append the values to the drop down
-            jQuery.each( data.data, function(i, v) {
-                dropdown.append( $('<option value="'+ v.id +'">'+ v.session_name +'</option>') );
-            });
-        });*/
     }
 
     $(document).ready( function () {
@@ -231,7 +269,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             $.ajax({
                 url:"https://3assal.net/scripts/payForSession.php",
                 method:"POST",
-                crossDomain: true,
                 data:{attendance_id:attendance_id, action:"pay"},
                 success:function(data)
                 {
