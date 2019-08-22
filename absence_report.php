@@ -171,47 +171,8 @@ if ( !isset( $_SESSION['user_id'] ) ) {
 
 <script>
 
-    function getSessionData(a) {
-        var x = (a.value || a.options[a.selectedIndex].value);  //crossbrowser solution =)
-        fetchSessionDataFromServer(x);
-    }
-
     function fetchSessionDataFromServer(session_id) {
-        var dataTable = $('#exampless').DataTable(
-            {
-                "processing": true,
-                "ajax":{
-                    url:"https://3assal.net/scripts/fetchAbsentStudents.php",
-                    type:"GET",
-                    "bDestroy": true,
-                    data: {
-                        "session_id": session_id
-                    }
-                },
-                "columns": [
-                    { "data": "full_name" },
-                    { "data": "student_no" },
-                    { "data": "mobile" }
 
-                ],
-                "language":{
-                    "sProcessing":   "جارٍ التحميل...",
-                    "sLengthMenu":   "أظهر _MENU_ مدخلات",
-                    "sZeroRecords":  "لم يعثر على أية سجلات",
-                    "sInfo":         "إظهار _START_ إلى _END_ من أصل _TOTAL_ مدخل",
-                    "sInfoEmpty":    "يعرض 0 إلى 0 من أصل 0 سجل",
-                    "sInfoFiltered": "(منتقاة من مجموع _MAX_ مُدخل)",
-                    "sInfoPostFix":  "",
-                    "sSearch":       "ابحث :  ",
-                    "sUrl":          "",
-                    "oPaginate": {
-                        "sFirst":    "الأول",
-                        "sPrevious": "السابق",
-                        "sNext":     "التالي",
-                        "sLast":     "الأخير"
-                    }
-                }
-            });
     }
 
     function getAllSessions(){
@@ -244,6 +205,45 @@ if ( !isset( $_SESSION['user_id'] ) ) {
     }
 
     $(document).ready( function () {
+
+        var dataTable = $('#exampless').DataTable(
+            {
+                "processing": true,
+                "ajax":{
+                    url:"https://3assal.net/scripts/fetchAbsentStudents.php",
+                    type:"GET",
+                    data:function ( d ) {
+                        d.session_id = $('#inputSession').val();
+                    }
+                },
+                "columns": [
+                    { "data": "full_name" },
+                    { "data": "student_no" },
+                    { "data": "mobile" }
+
+                ],
+                "language":{
+                    "sProcessing":   "جارٍ التحميل...",
+                    "sLengthMenu":   "أظهر _MENU_ مدخلات",
+                    "sZeroRecords":  "لم يعثر على أية سجلات",
+                    "sInfo":         "إظهار _START_ إلى _END_ من أصل _TOTAL_ مدخل",
+                    "sInfoEmpty":    "يعرض 0 إلى 0 من أصل 0 سجل",
+                    "sInfoFiltered": "(منتقاة من مجموع _MAX_ مُدخل)",
+                    "sInfoPostFix":  "",
+                    "sSearch":       "ابحث :  ",
+                    "sUrl":          "",
+                    "oPaginate": {
+                        "sFirst":    "الأول",
+                        "sPrevious": "السابق",
+                        "sNext":     "التالي",
+                        "sLast":     "الأخير"
+                    }
+                }
+            });
+
+        $('#exampless').change(function() {
+            dataTable.ajax.reload();
+        } );
 
         var x = document.getElementById("myDIV");
         x.style.display = "none";

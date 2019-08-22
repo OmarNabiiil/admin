@@ -4,15 +4,6 @@
     <list default="true" id="84351c13-2239-438a-b062-84f4fdff1c67" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/absence_report.php" beforeDir="false" afterPath="$PROJECT_DIR$/absence_report.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/announcements.php" beforeDir="false" afterPath="$PROJECT_DIR$/announcements.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance.php" beforeDir="false" afterPath="$PROJECT_DIR$/attendance.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance_history.php" beforeDir="false" afterPath="$PROJECT_DIR$/attendance_history.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/groups.php" beforeDir="false" afterPath="$PROJECT_DIR$/groups.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guests.php" beforeDir="false" afterPath="$PROJECT_DIR$/guests.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment_report.php" beforeDir="false" afterPath="$PROJECT_DIR$/payment_report.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quizzes.php" beforeDir="false" afterPath="$PROJECT_DIR$/quizzes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sessions.php" beforeDir="false" afterPath="$PROJECT_DIR$/sessions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/students.php" beforeDir="false" afterPath="$PROJECT_DIR$/students.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/absence_report.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="65" column="108" selection-start-line="65" selection-start-column="108" selection-end-line="65" selection-end-column="108" />
+            <state relative-caret-position="240">
+              <caret line="174" column="8" selection-start-line="174" selection-start-column="8" selection-end-line="174" selection-end-column="8" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#a#0;n#li#10;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -44,42 +35,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="473">
               <caret line="63" column="205" selection-start-line="63" selection-start-column="205" selection-end-line="63" selection-end-column="205" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#a#0;n#li#10;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sessions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="61" column="205" selection-start-line="61" selection-start-column="205" selection-end-line="61" selection-end-column="205" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#a#0;n#li#10;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/attendance_history.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="65" column="205" selection-start-line="65" selection-start-column="205" selection-end-line="65" selection-end-column="205" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#a#0;n#li#10;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/attendance.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="65" column="205" selection-start-line="65" selection-start-column="205" selection-end-line="65" selection-end-column="205" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#a#0;n#li#10;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -135,7 +90,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/quizzes.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="339">
@@ -162,7 +117,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/home.php" />
-        <option value="$PROJECT_DIR$/absence_report.php" />
         <option value="$PROJECT_DIR$/students.php" />
         <option value="$PROJECT_DIR$/sessions.php" />
         <option value="$PROJECT_DIR$/attendance_history.php" />
@@ -172,6 +126,7 @@
         <option value="$PROJECT_DIR$/groups.php" />
         <option value="$PROJECT_DIR$/payment_report.php" />
         <option value="$PROJECT_DIR$/quizzes.php" />
+        <option value="$PROJECT_DIR$/absence_report.php" />
       </list>
     </option>
   </component>
@@ -232,7 +187,7 @@
       <workItem from="1566153165220" duration="5922000" />
       <workItem from="1566203004071" duration="8750000" />
       <workItem from="1566337692512" duration="146000" />
-      <workItem from="1566456637404" duration="2174000" />
+      <workItem from="1566456637404" duration="2721000" />
     </task>
     <task id="LOCAL-00001" summary="initial deployment">
       <created>1566153467408</created>
@@ -465,11 +420,25 @@
       <option name="project" value="LOCAL" />
       <updated>1566456885549</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="add absence students report page">
+      <created>1566465037728</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1566465037728</updated>
+    </task>
+    <task id="LOCAL-00035" summary="add absence students report page">
+      <created>1566465259733</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1566465259733</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16992000" />
+    <option name="totallyTimeSpent" value="17539000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -508,7 +477,8 @@
     <MESSAGE value="adding new page for showing all guests" />
     <MESSAGE value="testing the password" />
     <MESSAGE value="update students page" />
-    <option name="LAST_COMMIT_MESSAGE" value="update students page" />
+    <MESSAGE value="add absence students report page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add absence students report page" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/home.php">
@@ -530,16 +500,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/absence_report.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="65" column="108" selection-start-line="65" selection-start-column="108" selection-end-line="65" selection-end-column="108" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#a#0;n#li#10;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/students.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -625,6 +585,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
           <caret line="61" column="205" selection-start-line="61" selection-start-column="205" selection-end-line="61" selection-end-column="205" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#a#0;n#li#10;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/absence_report.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="174" column="8" selection-start-line="174" selection-start-column="8" selection-end-line="174" selection-end-column="8" />
           <folding>
             <element signature="n#style#0;n#span#0;n#a#0;n#li#10;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
