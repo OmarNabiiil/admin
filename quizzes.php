@@ -262,10 +262,8 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                 var dataTable = $('#groups_table').DataTable(
                     {
                         "processing": true,
-                        "serverSide": true,
                         "ajax":{
                             url:"https://3assal.net/scripts/getAllQuizzes.php",
-                            crossDomain: true,
                             type:"POST"
                         },
                         "columns": [
@@ -316,7 +314,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             //$('#action').modal('hide');
             $.ajax({
                 url:"https://3assal.net/scripts/addGradesForQuiz.php",
-                crossDomain: true,
                 method:'POST',
                 data: new FormData(form),
                 contentType:false,
@@ -340,7 +337,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             //$('#action').modal('hide');
             $.ajax({
                 url:"https://3assal.net/scripts/addQuiz.php",
-                crossDomain: true,
                 method:'POST',
                 data: new FormData(form),
                 contentType:false,

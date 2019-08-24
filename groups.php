@@ -256,7 +256,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                         "serverSide": true,
                         "ajax":{
                             url:"https://3assal.net/scripts/getAllGroupsAdmin.php",
-                            crossDomain: true,
                             type:"POST"
                         },
                         "columns": [
@@ -315,7 +314,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             //$('#action').modal('hide');
             $.ajax({
                 url:"https://3assal.net/scripts/addGroup.php",
-                crossDomain: true,
                 method:'POST',
                 data: new FormData(form),
                 contentType:false,
@@ -341,7 +339,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             //alert(group_id);
             $.ajax({
                 url:"https://3assal.net/scripts/getStudentsOfGroup.php",
-                crossDomain: true,
                 method:"POST",
                 data:{group_id:group_id},
                 dataType:"json",

@@ -100,7 +100,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="addStudentAttendanceModalLabel">إضافة إعلان</h5>
+                    <h5 class="modal-title" id="addStudentAttendanceModalLabel">إضافة طالب</h5>
                     <button type="button" class="close" data-dismiss="modal" style="margin-left: 0" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -139,7 +139,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="addGuestAttendanceModalLabel">إضافة إعلان</h5>
+                    <h5 class="modal-title" id="addGuestAttendanceModalLabel">إضافة طالب</h5>
                     <button type="button" class="close" data-dismiss="modal" style="margin-left: 0" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -269,7 +269,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             $.ajax({
                 url:"https://3assal.net/scripts/payForSession.php",
                 method:"POST",
-                crossDomain: true,
                 data:{attendance_id:attendance_id, action:"pay"},
                 success:function(data)
                 {
@@ -287,7 +286,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             //$('#action').modal('hide');
             $.ajax({
                 url:"https://3assal.net/scripts/addStudentAttendance.php",
-                crossDomain: true,
                 method:'POST',
                 data: new FormData(form),
                 contentType:false,
@@ -313,7 +311,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             //$('#action').modal('hide');
             $.ajax({
                 url:"https://3assal.net/scripts/addGuestAttendance.php",
-                crossDomain: true,
                 method:'POST',
                 data: new FormData(form),
                 contentType:false,

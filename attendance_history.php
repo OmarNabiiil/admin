@@ -162,9 +162,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
 
         $.ajax({
             url:"https://3assal.net/scripts/getAllSessions.php",
-            crossDomain: true,
             method:'GET',
-            crossDomain: true,
             contentType:false,
             processData:false,
             success:function(data)

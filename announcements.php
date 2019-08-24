@@ -239,7 +239,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                         "serverSide": true,
                         "ajax":{
                             url:"https://3assal.net/scripts/getAllAnnouncements.php",
-                            crossDomain: true,
                             type:"POST"
                         },
                         "columns": [

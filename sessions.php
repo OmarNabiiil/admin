@@ -240,7 +240,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                         "serverSide": true,
                         "ajax":{
                             url:"https://3assal.net/scripts/getAllSessions.php",
-                            crossDomain: true,
                             type:"POST"
                         },
                         "columns": [
@@ -278,7 +277,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
 
             $.ajax({
                 url:"https://3assal.net/scripts/getAllGroups.php",
-                crossDomain: true,
                 method:'GET',
                 contentType:false,
                 processData:false,
@@ -323,7 +321,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             //$('#action').modal('hide');
             $.ajax({
                 url:"https://3assal.net/scripts/addSession.php",
-                crossDomain: true,
                 method:'POST',
                 data: new FormData(form),
                 contentType:false,
