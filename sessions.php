@@ -223,6 +223,8 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             }
         });
 
+        var dataTable;
+
         var x = document.getElementById("myDIV");
         x.style.display = "none";
 
@@ -234,7 +236,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             var pass = $("#password").val();
             if (pass === '1234'){
 
-                var dataTable = $('#example').DataTable(
+                dataTable = $('#example').DataTable(
                     {
                         "processing": true,
                         "serverSide": true,
