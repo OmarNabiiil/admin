@@ -228,12 +228,14 @@ if ( !isset( $_SESSION['user_id'] ) ) {
         let modal = $('#passwordModal');
         modal.modal('show');
 
+        var dataTable;
+
         $(document).on('submit', '#passwordModal', function(event){
             event.preventDefault();
             var pass = $("#password").val();
             if (pass === '1234'){
 
-                var dataTable = $('#example').DataTable(
+                dataTable = $('#example').DataTable(
                     {
                         "processing": true,
                         "serverSide": true,
