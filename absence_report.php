@@ -103,9 +103,9 @@ if ( !isset( $_SESSION['user_id'] ) ) {
 
                 <div class="row">
                     <div class="form-group col-md-6">
-                        <label for="inputSession">الحصة</label>
-                        <select onchange="getSessionData(this)" id="inputSession" name="inputSession" class="form-control">
-                            <option value="0">-Select-</option>
+                        <label for="inputWeek">الحصة</label>
+                        <select onchange="getSessionData(this)" id="inputWeek" name="inputWeek" class="form-control">
+
                         </select>
                     </div>
 
@@ -184,10 +184,10 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             processData:false,
             success:function(data)
             {
-                var dropdown = $('#inputSession');
+                var dropdown = $('#inputWeek');
 
                 var js = JSON.parse(data);
-                alert(js);
+                //alert(js);
                 //empty out the existing options
                 dropdown.empty();
 
@@ -213,7 +213,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                     url:"https://3assal.net/scripts/fetchAbsentStudents.php",
                     type:"GET",
                     data:function ( d ) {
-                        d.session_id = $('#inputSession').val();
+                        d.week_no = $('#inputWeek').val();
                     }
                 },
                 "columns": [
@@ -241,7 +241,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                 }
             });
 
-        $('#inputSession').change(function() {
+        $('#inputWeek').change(function() {
             dataTable.ajax.reload();
         } );
 
