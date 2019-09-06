@@ -186,14 +186,14 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             {
                 var dropdown = $('#inputSession');
 
-                //var js = JSON.parse(data);
-                //alert(js.data);
+                var js = JSON.parse(data);
+                alert(js);
                 //empty out the existing options
                 dropdown.empty();
 
                 dropdown.append( $('<option value="0">إختر ...</option>') );
                 //append the values to the drop down
-                jQuery.each( data, function(i, v) {
+                jQuery.each( js, function(i, v) {
                     dropdown.append( $('<option value="'+ v +'">'+ v +'</option>') );
                 });
             },
