@@ -157,6 +157,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                                     <tr>
                                         <th> أسم الحصة</th>
                                         <th>المجموعة</th>
+                                        <th>رقم الاسبوع</th>
                                         <th>التاريخ</th>
                                     </tr>
                                     </thead>
@@ -164,6 +165,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                                     <tr>
                                         <th> أسم الحصة</th>
                                         <th>المجموعة</th>
+                                        <th>رقم الاسبوع</th>
                                         <th>التاريخ</th>
                                     </tr>
                                     </tfoot>
@@ -252,6 +254,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                         "columns": [
                             { "data": "session_name" },
                             { "data": "group_name" },
+                            { "data": "week_no" },
                             { "data": "date" }
                         ],
                         "language":{

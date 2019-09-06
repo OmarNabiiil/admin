@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84351c13-2239-438a-b062-84f4fdff1c67" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/absence_report.php" beforeDir="false" afterPath="$PROJECT_DIR$/absence_report.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sessions.php" beforeDir="false" afterPath="$PROJECT_DIR$/sessions.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/absence_report.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="189" column="24" selection-start-line="189" selection-start-column="24" selection-end-line="189" selection-end-column="24" />
+            <state relative-caret-position="252">
+              <caret line="215" column="33" selection-start-line="215" selection-start-column="26" selection-end-line="215" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -44,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sessions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="113" column="49" selection-start-line="113" selection-start-column="49" selection-end-line="113" selection-end-column="49" />
+            <state relative-caret-position="286">
+              <caret line="254" column="46" selection-start-line="254" selection-start-column="46" selection-end-line="254" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -68,6 +69,7 @@
     <findStrings>
       <find>Name</find>
       <find>addQuizModal</find>
+      <find>inputSession</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -85,8 +87,8 @@
         <option value="$PROJECT_DIR$/quizzes.php" />
         <option value="$PROJECT_DIR$/groups.php" />
         <option value="$PROJECT_DIR$/attendance.php" />
-        <option value="$PROJECT_DIR$/sessions.php" />
         <option value="$PROJECT_DIR$/absence_report.php" />
+        <option value="$PROJECT_DIR$/sessions.php" />
       </list>
     </option>
   </component>
@@ -150,14 +152,7 @@
       <workItem from="1566456637404" duration="3857000" />
       <workItem from="1566647101051" duration="615000" />
       <workItem from="1566823343447" duration="1576000" />
-      <workItem from="1567776618121" duration="951000" />
-    </task>
-    <task id="LOCAL-00001" summary="initial deployment">
-      <created>1566153467408</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1566153467408</updated>
+      <workItem from="1567776618121" duration="2234000" />
     </task>
     <task id="LOCAL-00002" summary="initial deployment">
       <created>1566154305695</created>
@@ -481,11 +476,32 @@
       <option name="project" value="LOCAL" />
       <updated>1567780291669</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="update the absence report page">
+      <created>1567781442775</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1567781442775</updated>
+    </task>
+    <task id="LOCAL-00049" summary="update the absence report page">
+      <created>1567781460882</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1567781460882</updated>
+    </task>
+    <task id="LOCAL-00050" summary="update the absence report page">
+      <created>1567783100609</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1567783100610</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21817000" />
+    <option name="totallyTimeSpent" value="23100000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -608,17 +624,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sessions.php">
+    <entry file="file://$PROJECT_DIR$/absence_report.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="113" column="49" selection-start-line="113" selection-start-column="49" selection-end-line="113" selection-end-column="49" />
+        <state relative-caret-position="252">
+          <caret line="215" column="33" selection-start-line="215" selection-start-column="26" selection-end-line="215" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/absence_report.php">
+    <entry file="file://$PROJECT_DIR$/sessions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="189" column="24" selection-start-line="189" selection-start-column="24" selection-end-line="189" selection-end-column="24" />
+        <state relative-caret-position="286">
+          <caret line="254" column="46" selection-start-line="254" selection-start-column="46" selection-end-line="254" selection-end-column="46" />
         </state>
       </provider>
     </entry>
