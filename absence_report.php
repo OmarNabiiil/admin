@@ -178,7 +178,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
     function getAllSessions(){
 
         $.ajax({
-            url:"https://3assal.net/scripts/getAllSessions.php",
+            url:"https://3assal.net/scripts/getWeekNos.php",
             method:'GET',
             contentType:false,
             processData:false,
@@ -186,15 +186,15 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             {
                 var dropdown = $('#inputSession');
 
-                var js = JSON.parse(data);
+                //var js = JSON.parse(data);
                 //alert(js.data);
                 //empty out the existing options
                 dropdown.empty();
 
                 dropdown.append( $('<option value="0">إختر ...</option>') );
                 //append the values to the drop down
-                jQuery.each( js.data, function(i, v) {
-                    dropdown.append( $('<option value="'+ v.id +'">'+ v.session_name +'</option>') );
+                jQuery.each( data, function(i, v) {
+                    dropdown.append( $('<option value="'+ v +'">'+ v +'</option>') );
                 });
             },
             error:function(result){

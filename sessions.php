@@ -110,6 +110,11 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                             <textarea class="form-control" name="inputBody" id="inputBody" rows="2" placeholder="إسم الحصة"></textarea>
                         </div>
 
+                        <div class="form-group">
+                            <label for="inputWeek">رقم الاسبوع</label>
+                            <input type="number" class="form-control" id="inputWeek" name="inputWeek" placeholder="رقم الاسبوع">
+                        </div>
+
                         <div class="form-group col-md-4">
                             <label for="inputGroup">المجموعة</label>
                             <select name="inputGroup" id="inputGroup" class="form-control">
