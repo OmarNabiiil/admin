@@ -361,7 +361,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                         trHTML += '<tr><td>' + item.student_no + '</td><td>' + item.first_name + '  ' + item.middle_name + '  ' + item.last_name + '  ' + '</td></tr>';
                     });
 
-                    var h6 = '<h6 id="noOfStudents" class="text-right mb-0">'+ 'عدد الطلاب في المجموعة: ' + response.length +'</h6>';
+                    var h6 = '<h6 id="noOfStudents" class="text-right mb-0">'+ 'عدد الطلاب في المجموعة :  ' + response.length +'</h6>';
                         
                     $("#students_table tbody tr").remove();
                     $("#noOfStudentsDiv h6").remove();
