@@ -251,7 +251,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
         $(document).on('submit', '#passwordModal', function(event){
             event.preventDefault();
             var pass = $("#password").val();
-            if (pass === '1234'){
+            if (pass === '1114'){
                 dataTable = $('#groups_table').DataTable(
                     {
                         "processing": true,
