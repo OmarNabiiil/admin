@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84351c13-2239-438a-b062-84f4fdff1c67" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/absence_report.php" beforeDir="false" afterPath="$PROJECT_DIR$/absence_report.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/announcements.php" beforeDir="false" afterPath="$PROJECT_DIR$/announcements.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance.php" beforeDir="false" afterPath="$PROJECT_DIR$/attendance.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance_history.php" beforeDir="false" afterPath="$PROJECT_DIR$/attendance_history.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/groups.php" beforeDir="false" afterPath="$PROJECT_DIR$/groups.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guests.php" beforeDir="false" afterPath="$PROJECT_DIR$/guests.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment_report.php" beforeDir="false" afterPath="$PROJECT_DIR$/payment_report.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quizzes.php" beforeDir="false" afterPath="$PROJECT_DIR$/quizzes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sessions.php" beforeDir="false" afterPath="$PROJECT_DIR$/sessions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/students.php" beforeDir="false" afterPath="$PROJECT_DIR$/students.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,11 +17,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/absence_report.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-294">
               <caret line="215" column="33" selection-start-line="215" selection-start-column="26" selection-end-line="215" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/attendance.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="898">
+              <caret line="295" column="49" selection-start-line="295" selection-start-column="49" selection-end-line="295" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/groups.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="501">
+              <caret line="365" column="59" lean-forward="true" selection-start-line="365" selection-start-column="59" selection-end-line="365" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -58,10 +66,10 @@
         <option value="$PROJECT_DIR$/students.php" />
         <option value="$PROJECT_DIR$/announcements.php" />
         <option value="$PROJECT_DIR$/quizzes.php" />
-        <option value="$PROJECT_DIR$/groups.php" />
         <option value="$PROJECT_DIR$/attendance.php" />
         <option value="$PROJECT_DIR$/absence_report.php" />
         <option value="$PROJECT_DIR$/sessions.php" />
+        <option value="$PROJECT_DIR$/groups.php" />
       </list>
     </option>
   </component>
@@ -96,6 +104,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -125,14 +138,7 @@
       <workItem from="1566647101051" duration="615000" />
       <workItem from="1566823343447" duration="1576000" />
       <workItem from="1567776618121" duration="2772000" />
-      <workItem from="1568380671789" duration="490000" />
-    </task>
-    <task id="LOCAL-00003" summary="initial deployment">
-      <created>1566154389363</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1566154389363</updated>
+      <workItem from="1568380671789" duration="1175000" />
     </task>
     <task id="LOCAL-00004" summary="update the students page and adding the ability to search by code and making the email optional in adding new student">
       <created>1566154960474</created>
@@ -470,11 +476,18 @@
       <option name="project" value="LOCAL" />
       <updated>1567783482391</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="update passwords for all pages">
+      <created>1568381425762</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1568381425764</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24128000" />
+    <option name="totallyTimeSpent" value="24813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -518,7 +531,8 @@
     <MESSAGE value="update and fix bugs in sessions page" />
     <MESSAGE value="update and fix bugs in all the pages" />
     <MESSAGE value="update the absence report page" />
-    <option name="LAST_COMMIT_MESSAGE" value="update the absence report page" />
+    <MESSAGE value="update passwords for all pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="update passwords for all pages" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -552,13 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/groups.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="254" column="16" selection-start-line="254" selection-start-column="16" selection-end-line="254" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/payment_report.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2430">
@@ -580,13 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/attendance.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="295" column="49" selection-start-line="295" selection-start-column="49" selection-end-line="295" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
@@ -605,6 +605,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-294">
           <caret line="215" column="33" selection-start-line="215" selection-start-column="26" selection-end-line="215" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/attendance.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="898">
+          <caret line="295" column="49" selection-start-line="295" selection-start-column="49" selection-end-line="295" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/groups.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="365" column="59" lean-forward="true" selection-start-line="365" selection-start-column="59" selection-end-line="365" selection-end-column="59" />
         </state>
       </provider>
     </entry>
