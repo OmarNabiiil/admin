@@ -133,6 +133,12 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                         <h4 class="modal-title">تفاصيل المجموعة</h4>
                     </div>
                     <div class="modal-body">
+                        <div class="card">
+                            <div id="noOfStudentsDiv" class="card-header">
+
+                            </div>
+                        </div>
+
 
                         <table id="students_table" class="table table-bordered">
                             <thead>
@@ -354,9 +360,12 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                         //alert(item.student_no);
                         trHTML += '<tr><td>' + item.student_no + '</td><td>' + item.first_name + '  ' + item.middle_name + '  ' + item.last_name + '  ' + '</td></tr>';
                     });
+
+                    var h6 = '<h6 id="noOfStudents" class="text-right mb-0">'+ response.length +'</h6>';
                         
                     $("#students_table tbody tr").remove();
                     $('#students_table tbody').append(trHTML);
+                    $('#noOfStudentsDiv').append(h6);
 
 
                     //alert(res);
