@@ -515,7 +515,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                     $('#addDiscountModal').modal('hide');
                 },
                 error:function (data) {
-                    alert(data);
+                    alert(JSON.stringify(data));
                 }
             });
 
