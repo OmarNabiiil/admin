@@ -255,14 +255,11 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">مسح طالب</h4>
+                        <h4 class="modal-title">هل انت متأكد أنك تريد مسح الطالب ؟</h4>
                     </div>
                     <div class="modal-body">
-                        <label>هل انت متأكد أنك تريد مسح الطالب ؟</label>
-                        <br />
-
+                        <input type="hidden" name="user2_id" id="user2_id" />
                     </div>
-                    <input type="hidden" name="user2_id" id="user2_id" />
                     <div class="modal-footer">
                         <button id="deleteStudentButton" type="submit" class="btn btn-primary">مسح</button>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء</button>

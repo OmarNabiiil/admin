@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="84351c13-2239-438a-b062-84f4fdff1c67" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/students.php" beforeDir="false" afterPath="$PROJECT_DIR$/students.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/students.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="510" column="38" lean-forward="true" selection-start-line="510" selection-start-column="38" selection-end-line="510" selection-end-column="38" />
+            <state relative-caret-position="322">
+              <caret line="253" column="47" selection-start-line="253" selection-start-column="47" selection-end-line="253" selection-end-column="47" />
               <folding>
                 <element signature="e#14629#14636#1#HTML" expanded="true" />
               </folding>
@@ -170,28 +169,7 @@
       <workItem from="1566823343447" duration="1576000" />
       <workItem from="1567776618121" duration="2772000" />
       <workItem from="1568380671789" duration="1803000" />
-      <workItem from="1568904066139" duration="3201000" />
-    </task>
-    <task id="LOCAL-00014" summary="adding new page for showing all guests">
-      <created>1566171645537</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1566171645537</updated>
-    </task>
-    <task id="LOCAL-00015" summary="testing the password">
-      <created>1566208109965</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1566208109965</updated>
-    </task>
-    <task id="LOCAL-00016" summary="testing the password">
-      <created>1566208236446</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1566208236446</updated>
+      <workItem from="1568904066139" duration="4071000" />
     </task>
     <task id="LOCAL-00017" summary="testing the password">
       <created>1566210379677</created>
@@ -515,11 +493,32 @@
       <option name="project" value="LOCAL" />
       <updated>1568919756270</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="add delete student to students page">
+      <created>1568919933889</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1568919933889</updated>
+    </task>
+    <task id="LOCAL-00064" summary="add delete student to students page">
+      <created>1568920063107</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1568920063107</updated>
+    </task>
+    <task id="LOCAL-00065" summary="add delete student to students page">
+      <created>1568920396105</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1568920396105</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28642000" />
+    <option name="totallyTimeSpent" value="29512000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -658,8 +657,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/students.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="510" column="38" lean-forward="true" selection-start-line="510" selection-start-column="38" selection-end-line="510" selection-end-column="38" />
+        <state relative-caret-position="322">
+          <caret line="253" column="47" selection-start-line="253" selection-start-column="47" selection-end-line="253" selection-end-column="47" />
           <folding>
             <element signature="e#14629#14636#1#HTML" expanded="true" />
           </folding>
