@@ -507,7 +507,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                 processData:false,
                 success:function(data)
                 {
-                    alert(data);
+                    alert("تم إضافة خصم للطالب بنجاح");
                     $('#discount_form')[0].reset();
                     $('#addDiscountModal').modal('hide');
                 }
@@ -518,7 +518,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
         $(document).on('click', '.delete', function(){
 
             var user_id = $(this).attr("id");
-            alert(user_id);
+            //alert(user_id);
             $('#deleteStudentModal').modal('show');
             $('#user2_id').val(user_id);
 
@@ -537,8 +537,9 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                 crossDomain:true,
                 success:function(data)
                 {
-                    alert(data);
+                    alert("تم مسح الطالب بنجاح");
                     $('#deleteStudentModal').modal('hide');
+                    dataTable.ajax.reload();
                 }
             });
 
