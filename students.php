@@ -594,7 +594,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
         });
 
         $(document).on('submit', '#addUserModal', function(event){
-            //event.preventDefault();
+            event.preventDefault();
             let form = document.querySelector('#addUserForm');
             //$('#action').modal('hide');
             $.ajax({
@@ -609,10 +609,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                     $('#addUserForm')[0].reset();
                     $('#addUserModal').modal('hide');
                     dataTable.ajax.reload();
-                },
-                error:function(result){
-                    //document.getElementById('action').style.visibility = 'visible';
-                    alert("process failed!");
                 }
             });
         });
