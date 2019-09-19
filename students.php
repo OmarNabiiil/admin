@@ -264,7 +264,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                     </div>
                     <input type="hidden" name="user_id" id="user_id" />
                     <div class="modal-footer">
-                        <button id="addDiscountButton" type="submit" class="btn btn-primary">مسح</button>
+                        <button id="deleteStudentButton" type="submit" class="btn btn-primary">مسح</button>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء</button>
                     </div>
                 </div>
@@ -520,6 +520,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
         $(document).on('click', '.delete', function(){
 
             var user_id = $(this).attr("id");
+            alert(user_id);
             $('#deleteStudentModal').modal('show');
             $('#user_id').val(user_id);
 
