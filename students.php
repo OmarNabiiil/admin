@@ -526,12 +526,13 @@ if ( !isset( $_SESSION['user_id'] ) ) {
 
         $(document).on('submit', '#deleteStudentModal', function(){
 
-            let form = document.querySelector('#delete_form');
+            //let form = document.querySelector('#delete_form');
+            var user_id = $('#user2_id').val();
             //$('#action').modal('hide');
             $.ajax({
                 url:"https://3assal.net/scripts/deleteStudent.php",
                 method:'POST',
-                data: new FormData(form),
+                data:{user_id:user_id},
                 crossDomain:true,
                 contentType:false,
                 processData:false,
