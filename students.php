@@ -537,7 +537,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                 processData:false,
                 success:function(data)
                 {
-                    //alert(data);
+                    alert(data);
                     $('#deleteStudentModal')[0].reset();
                     $('#deleteStudentModal').modal('hide');
                 }
