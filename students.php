@@ -513,6 +513,9 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                     alert(data);
                     $('#addDiscountModal')[0].reset();
                     $('#addDiscountModal').modal('hide');
+                },
+                error:function (data) {
+                    alert(data);
                 }
             });
 
