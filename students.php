@@ -258,7 +258,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                         <h4 class="modal-title">هل انت متأكد أنك تريد مسح الطالب ؟</h4>
                     </div>
                     <div class="modal-body">
-                        <input type="hidden" name="user2_id" id="user2_id" />
+                        <input type="hidden" name="user2_id" id="user2_id" class="form-control" />
                     </div>
                     <div class="modal-footer">
                         <button id="deleteStudentButton" type="submit" class="btn btn-primary">مسح</button>
