@@ -494,8 +494,8 @@ if ( !isset( $_SESSION['user_id'] ) ) {
 
         });
 
-        $(document).on('submit', '#addDiscountModal', function(){
-
+        $(document).on('submit', '#addDiscountModal', function(event){
+            event.preventDefault();
             let form = document.querySelector('#discount_form');
             //$('#action').modal('hide');
             $.ajax({
@@ -508,7 +508,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                 success:function(data)
                 {
                     alert(data);
-                    $('#addDiscountModal')[0].reset();
+                    $('#discount_form')[0].reset();
                     $('#addDiscountModal').modal('hide');
                 }
             });
@@ -524,8 +524,8 @@ if ( !isset( $_SESSION['user_id'] ) ) {
 
         });
 
-        $(document).on('submit', '#deleteStudentModal', function(){
-
+        $(document).on('submit', '#deleteStudentModal', function(event){
+            event.preventDefault();
             //let form = document.querySelector('#delete_form');
             var user_id = $('#user2_id').val();
             //alert(user_id);
@@ -538,7 +538,6 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                 success:function(data)
                 {
                     alert(data);
-                    $('#deleteStudentModal')[0].reset();
                     $('#deleteStudentModal').modal('hide');
                 }
             });

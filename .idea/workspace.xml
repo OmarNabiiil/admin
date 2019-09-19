@@ -57,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/students.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="596" column="14" selection-start-line="596" selection-start-column="14" selection-end-line="596" selection-end-column="14" />
+            <state relative-caret-position="2041">
+              <caret line="539" column="32" selection-start-line="539" selection-start-column="32" selection-end-line="539" selection-end-column="32" />
               <folding>
                 <element signature="e#14629#14636#1#HTML" expanded="true" />
               </folding>
@@ -171,21 +171,7 @@
       <workItem from="1566823343447" duration="1576000" />
       <workItem from="1567776618121" duration="2772000" />
       <workItem from="1568380671789" duration="1803000" />
-      <workItem from="1568904066139" duration="5383000" />
-    </task>
-    <task id="LOCAL-00020" summary="testing the password">
-      <created>1566292535182</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1566292535182</updated>
-    </task>
-    <task id="LOCAL-00021" summary="testing the password">
-      <created>1566292708416</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1566292708416</updated>
+      <workItem from="1568904066139" duration="5876000" />
     </task>
     <task id="LOCAL-00022" summary="testing the password">
       <created>1566292784115</created>
@@ -516,11 +502,25 @@
       <option name="project" value="LOCAL" />
       <updated>1568921484822</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="add delete student to students page">
+      <created>1568923102577</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1568923102578</updated>
+    </task>
+    <task id="LOCAL-00070" summary="add delete student to students page">
+      <created>1568923619119</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1568923619119</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30824000" />
+    <option name="totallyTimeSpent" value="31317000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -659,8 +659,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/students.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="596" column="14" selection-start-line="596" selection-start-column="14" selection-end-line="596" selection-end-column="14" />
+        <state relative-caret-position="2041">
+          <caret line="539" column="32" selection-start-line="539" selection-start-column="32" selection-end-line="539" selection-end-column="32" />
           <folding>
             <element signature="e#14629#14636#1#HTML" expanded="true" />
           </folding>
