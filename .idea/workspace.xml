@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84351c13-2239-438a-b062-84f4fdff1c67" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/groups.php" beforeDir="false" afterPath="$PROJECT_DIR$/groups.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/students.php" beforeDir="false" afterPath="$PROJECT_DIR$/students.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +21,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/absence_report.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-294">
+            <state relative-caret-position="3225">
               <caret line="215" column="33" selection-start-line="215" selection-start-column="26" selection-end-line="215" selection-end-column="33" />
             </state>
           </provider>
@@ -29,17 +30,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/attendance.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="898">
+            <state relative-caret-position="4425">
               <caret line="295" column="49" selection-start-line="295" selection-start-column="49" selection-end-line="295" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/groups.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="365" column="59" lean-forward="true" selection-start-line="365" selection-start-column="59" selection-end-line="365" selection-end-column="59" />
+            <state relative-caret-position="5445">
+              <caret line="363" column="105" selection-start-line="363" selection-start-column="105" selection-end-line="363" selection-end-column="105" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/attendance_history.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="163" column="64" selection-start-line="163" selection-start-column="64" selection-end-line="163" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/students.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3736">
+              <caret line="260" column="30" selection-start-line="260" selection-start-column="30" selection-end-line="260" selection-end-column="30" />
+              <folding>
+                <element signature="e#14629#14636#1#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,13 +85,13 @@
         <option value="$PROJECT_DIR$/payment_report.php" />
         <option value="$PROJECT_DIR$/guests.php" />
         <option value="$PROJECT_DIR$/attendance_history.php" />
-        <option value="$PROJECT_DIR$/students.php" />
         <option value="$PROJECT_DIR$/announcements.php" />
         <option value="$PROJECT_DIR$/quizzes.php" />
         <option value="$PROJECT_DIR$/attendance.php" />
         <option value="$PROJECT_DIR$/absence_report.php" />
         <option value="$PROJECT_DIR$/sessions.php" />
         <option value="$PROJECT_DIR$/groups.php" />
+        <option value="$PROJECT_DIR$/students.php" />
       </list>
     </option>
   </component>
@@ -138,28 +160,8 @@
       <workItem from="1566647101051" duration="615000" />
       <workItem from="1566823343447" duration="1576000" />
       <workItem from="1567776618121" duration="2772000" />
-      <workItem from="1568380671789" duration="1175000" />
-    </task>
-    <task id="LOCAL-00004" summary="update the students page and adding the ability to search by code and making the email optional in adding new student">
-      <created>1566154960474</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1566154960474</updated>
-    </task>
-    <task id="LOCAL-00005" summary="update the groups page and adding the location and time of the group">
-      <created>1566156055862</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1566156055862</updated>
-    </task>
-    <task id="LOCAL-00006" summary="update the sessions page and adding the location and time of the group">
-      <created>1566157153730</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1566157153730</updated>
+      <workItem from="1568380671789" duration="1803000" />
+      <workItem from="1568904066139" duration="640000" />
     </task>
     <task id="LOCAL-00007" summary="update the sessions page and adding the location and time of the group">
       <created>1566158401144</created>
@@ -483,17 +485,38 @@
       <option name="project" value="LOCAL" />
       <updated>1568381425764</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="update passwords for all pages">
+      <created>1568382639930</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1568382639930</updated>
+    </task>
+    <task id="LOCAL-00054" summary="update passwords for all pages">
+      <created>1568382806613</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1568382806613</updated>
+    </task>
+    <task id="LOCAL-00055" summary="display students number in each group">
+      <created>1568383051628</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1568383051628</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24813000" />
+    <option name="totallyTimeSpent" value="26081000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14449213" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14663805" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -532,7 +555,8 @@
     <MESSAGE value="update and fix bugs in all the pages" />
     <MESSAGE value="update the absence report page" />
     <MESSAGE value="update passwords for all pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="update passwords for all pages" />
+    <MESSAGE value="display students number in each group" />
+    <option name="LAST_COMMIT_MESSAGE" value="display students number in each group" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -544,13 +568,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/attendance_history.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="163" column="64" selection-start-line="163" selection-start-column="64" selection-end-line="163" selection-end-column="64" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/quizzes.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -580,13 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/students.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1920">
-          <caret line="128" column="30" lean-forward="true" selection-start-line="128" selection-start-column="30" selection-end-line="132" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
@@ -603,22 +613,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/absence_report.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-294">
+        <state relative-caret-position="3225">
           <caret line="215" column="33" selection-start-line="215" selection-start-column="26" selection-end-line="215" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/attendance.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="898">
+        <state relative-caret-position="4425">
           <caret line="295" column="49" selection-start-line="295" selection-start-column="49" selection-end-line="295" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/groups.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="365" column="59" lean-forward="true" selection-start-line="365" selection-start-column="59" selection-end-line="365" selection-end-column="59" />
+        <state relative-caret-position="5445">
+          <caret line="363" column="105" selection-start-line="363" selection-start-column="105" selection-end-line="363" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/attendance_history.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="163" column="64" selection-start-line="163" selection-start-column="64" selection-end-line="163" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/students.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3736">
+          <caret line="260" column="30" selection-start-line="260" selection-start-column="30" selection-end-line="260" selection-end-column="30" />
+          <folding>
+            <element signature="e#14629#14636#1#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

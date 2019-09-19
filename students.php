@@ -249,6 +249,29 @@ if ( !isset( $_SESSION['user_id'] ) ) {
         </div>
     </div>
 
+    <div id="deleteStudentModal" class="modal fade">
+        <div class="modal-dialog">
+            <form method="post" id="delete_form" enctype="multipart/form-data">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">مسح طالب</h4>
+                    </div>
+                    <div class="modal-body">
+                        <label>هل انت متأكد أنك تريد مسح الطالب ؟</label>
+                        <br />
+
+                    </div>
+                    <input type="hidden" name="user_id" id="user_id" />
+                    <div class="modal-footer">
+                        <button id="addDiscountButton" type="submit" class="btn btn-primary">مسح</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <div class="page-holder w-100 d-flex flex-wrap">
         <div id="myDIV" class="container-fluid px-xl-5">
             <section class="py-5">
@@ -274,6 +297,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                                         <th>رقم الهاتف</th>
                                         <th>خصم</th>
                                         <th>التفاصيل</th>
+                                        <th>مسح</th>
                                     </tr>
                                     </thead>
                                     <tfoot>
@@ -283,6 +307,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                                         <th>رقم الهاتف</th>
                                         <th>خصم</th>
                                         <th>التفاصيل</th>
+                                        <th>مسح</th>
                                     </tr>
                                     </tfoot>
 
@@ -391,7 +416,8 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                             { "data": "student_no" },
                             { "data": "mobile" },
                             { "data": "discount" },
-                            { "data": "action" }
+                            { "data": "action" },
+                            { "data": "delete" }
                         ],
                         "language":{
                             "sProcessing":   "جارٍ التحميل...",
@@ -483,9 +509,37 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                 processData:false,
                 success:function(data)
                 {
-                    alert(data);
+                    //alert(data);
                     $('#addDiscountModal')[0].reset();
                     $('#addDiscountModal').modal('hide');
+                }
+            });
+
+        });
+
+        $(document).on('click', '.delete', function(){
+
+            var user_id = $(this).attr("id");
+            $('#deleteStudentModal').modal('show');
+            $('#user_id').val(user_id);
+
+        });
+
+        $(document).on('submit', '#deleteStudentModal', function(){
+
+            let form = document.querySelector('#delete_form');
+            //$('#action').modal('hide');
+            $.ajax({
+                url:"https://3assal.net/scripts/deleteStudent.php",
+                method:'POST',
+                data: new FormData(form),
+                contentType:false,
+                processData:false,
+                success:function(data)
+                {
+                    //alert(data);
+                    $('#deleteStudentModal')[0].reset();
+                    $('#deleteStudentModal').modal('hide');
                 }
             });
 
