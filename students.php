@@ -505,6 +505,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                 url:"https://3assal.net/scripts/addDiscountForStudent.php",
                 method:'POST',
                 data: new FormData(form),
+                crossDomain:true,
                 contentType:false,
                 processData:false,
                 success:function(data)
