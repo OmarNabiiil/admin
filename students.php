@@ -528,14 +528,13 @@ if ( !isset( $_SESSION['user_id'] ) ) {
 
             //let form = document.querySelector('#delete_form');
             var user_id = $('#user2_id').val();
+            //alert(user_id);
             //$('#action').modal('hide');
             $.ajax({
                 url:"https://3assal.net/scripts/deleteStudent.php",
                 method:'POST',
                 data:{user_id:user_id},
                 crossDomain:true,
-                contentType:false,
-                processData:false,
                 success:function(data)
                 {
                     alert(data);
@@ -595,7 +594,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
         });
 
         $(document).on('submit', '#addUserModal', function(event){
-            event.preventDefault();
+            //event.preventDefault();
             let form = document.querySelector('#addUserForm');
             //$('#action').modal('hide');
             $.ajax({
@@ -607,7 +606,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                 success:function(data)
                 {
                     alert(data);
-                    $('#addUserModal')[0].reset();
+                    $('#addUserForm')[0].reset();
                     $('#addUserModal').modal('hide');
                     dataTable.ajax.reload();
                 },
