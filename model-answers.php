@@ -112,9 +112,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                         </div>
 
                         <div class="form-group col-md-8">
-                            <h3>Upload File</h3>
                             <input type="file" name="myfile"> <br>
-                            <button type="submit" name="save">upload</button>
                         </div>
 
                         <button id="addModelAnswerActionButton" type="submit" class="btn btn-primary">إضافة</button>
@@ -204,7 +202,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
             },
             messages: {
                 inputBody: {
-                    required: "يجب إدخال التفاصيل"
+                    required: "يجب إدخال الإسم"
                 }
             },
             highlight: function(element, errorClass){
@@ -226,7 +224,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
         $(document).on('submit', '#passwordModal', function(event){
             event.preventDefault();
             var pass = $("#password").val();
-            if (pass === '44767'){
+            if (pass === '44777'){
 
                 dataTable = $('#example').DataTable(
                     {
@@ -278,7 +276,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                 success:function(data)
                 {
                     //$(this).modal('hide');
-                    alert("تم نشر الإعلان بنجاح");
+                    alert("تم إضافة نموذج الإجابة بنجاح");
                     let modal = $('#addModelAnswerModal');
                     modal.find('#addModelAnswerForm')[0].reset();
                     //form[0].reset();
