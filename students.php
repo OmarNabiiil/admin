@@ -293,6 +293,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                                         <th>الإسم</th>
                                         <th>الكود</th>
                                         <th>رقم الهاتف</th>
+                                        <th>المجموعة</th>
                                         <th>خصم</th>
                                         <th>التفاصيل</th>
                                         <th>مسح</th>
@@ -303,6 +304,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                                         <th>الإسم</th>
                                         <th>الكود</th>
                                         <th>رقم الهاتف</th>
+                                        <th>المجموعة</th>
                                         <th>خصم</th>
                                         <th>التفاصيل</th>
                                         <th>مسح</th>
@@ -413,6 +415,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                             { "data": "full_name" },
                             { "data": "student_no" },
                             { "data": "mobile" },
+                            { "data": "group" },
                             { "data": "discount" },
                             { "data": "action" },
                             { "data": "delete" }
