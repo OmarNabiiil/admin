@@ -228,7 +228,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
 
                 dataTable = $('#example').DataTable(
                     {
-                        "processing": true
+                        "processing": true,
                         "ajax":{
                             url:"https://3assal.net/scripts/getAllModelAnswers.php",
                             type:"POST"
