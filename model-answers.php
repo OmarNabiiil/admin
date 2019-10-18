@@ -125,6 +125,26 @@ if ( !isset( $_SESSION['user_id'] ) ) {
         </div>
     </div>
 
+    <div id="deleteModelAnswerModal" class="modal fade">
+        <div class="modal-dialog">
+            <form method="post" id="delete_form" enctype="multipart/form-data">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">هل انت متأكد أنك تريد مسح نموذج الإجابة ؟</h4>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" name="model2_id" id="model2_id" class="form-control" />
+                    </div>
+                    <div class="modal-footer">
+                        <button id="deleteStudentButton" type="submit" class="btn btn-primary">مسح</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <div class="page-holder w-100 d-flex flex-wrap">
         <div id="myDIV" class="container-fluid px-xl-5">
             <section class="py-5">
@@ -146,11 +166,13 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                                     <thead>
                                     <tr>
                                         <th>الإسم</th>
+                                        <th>مسح</th>
                                     </tr>
                                     </thead>
                                     <tfoot>
                                     <tr>
                                         <th>الإسم</th>
+                                        <th>مسح</th>
                                     </tr>
                                     </tfoot>
 
@@ -234,7 +256,8 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                             type:"POST"
                         },
                         "columns": [
-                            { "data": "name" }
+                            { "data": "name" },
+                            { "data": "delete" }
                         ],
                         "language":{
                             "sProcessing":   "جارٍ التحميل...",
@@ -287,6 +310,36 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                     alert("حدث خطأ ما!!");
                 }
             });
+        });
+
+        $(document).on('click', '.delete', function(){
+
+            var user_id = $(this).attr("id");
+            //alert(user_id);
+            $('#deleteModelAnswerModal').modal('show');
+            $('#model2_id').val(user_id);
+
+        });
+
+        $(document).on('submit', '#deleteModelAnswerModal', function(event){
+            event.preventDefault();
+            //let form = document.querySelector('#delete_form');
+            var user_id = $('#model2_id').val();
+            //alert(user_id);
+            //$('#action').modal('hide');
+            $.ajax({
+                url:"https://3assal.net/scripts/deleteModelAnswer.php",
+                method:'POST',
+                data:{user_id:user_id},
+                crossDomain:true,
+                success:function(data)
+                {
+                    alert("تم مسح  نموذج الإجابة بنجاح");
+                    $('#deleteModelAnswerModal').modal('hide');
+                    dataTable.ajax.reload();
+                }
+            });
+
         });
 
     });
