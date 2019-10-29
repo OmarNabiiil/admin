@@ -375,7 +375,7 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                 {
                     alert("تم مسح الطالب بنجاح");
                     $('#deleteStudentModal').modal('hide');
-                    dataTable.ajax.reload();
+                    reloadData();
                 }
             });
 
