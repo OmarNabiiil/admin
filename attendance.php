@@ -180,6 +180,26 @@ if ( !isset( $_SESSION['user_id'] ) ) {
         </div>
     </div>
 
+    <div id="deleteStudentModal" class="modal fade">
+        <div class="modal-dialog">
+            <form method="post" id="delete_form" enctype="multipart/form-data">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">هل انت متأكد أنك تريد مسح الطالب ؟</h4>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" name="user2_id" id="user2_id" class="form-control" />
+                    </div>
+                    <div class="modal-footer">
+                        <button id="deleteStudentButton" type="submit" class="btn btn-primary">مسح</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <div class="page-holder w-100 d-flex flex-wrap">
         <div id="myDIV" class="container-fluid px-xl-5">
             <section class="py-5">
@@ -329,6 +349,36 @@ if ( !isset( $_SESSION['user_id'] ) ) {
                     alert("process failed!");
                 }
             });
+        });
+
+        $(document).on('click', '.delete', function(){
+
+            var user_id = $(this).attr("id");
+            //alert(user_id);
+            $('#deleteStudentModal').modal('show');
+            $('#user2_id').val(user_id);
+
+        });
+
+        $(document).on('submit', '#deleteStudentModal', function(event){
+            event.preventDefault();
+            //let form = document.querySelector('#delete_form');
+            var attendance_id = $('#user2_id').val();
+            //alert(user_id);
+            //$('#action').modal('hide');
+            $.ajax({
+                url:"https://3assal.net/scripts/deleteStudentFromAttendance.php",
+                method:'POST',
+                data:{attendance_id:attendance_id},
+                crossDomain:true,
+                success:function(data)
+                {
+                    alert("تم مسح الطالب بنجاح");
+                    $('#deleteStudentModal').modal('hide');
+                    dataTable.ajax.reload();
+                }
+            });
+
         });
 
     });
