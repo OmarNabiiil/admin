@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="84351c13-2239-438a-b062-84f4fdff1c67" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance.php" beforeDir="false" afterPath="$PROJECT_DIR$/attendance.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/attendance.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2119">
-              <caret line="200" column="10" selection-start-line="200" selection-start-column="10" selection-end-line="200" selection-end-column="10" />
+            <state relative-caret-position="1263">
+              <caret line="377" column="33" selection-start-line="377" selection-start-column="33" selection-end-line="377" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -49,7 +48,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/students.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
+            <state relative-caret-position="15">
               <caret line="250" column="10" lean-forward="true" selection-start-line="250" selection-start-column="10" selection-end-line="270" selection-end-column="10" />
             </state>
           </provider>
@@ -78,6 +77,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -89,7 +89,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -142,21 +141,8 @@
       <workItem from="1571743223281" duration="11000" />
       <workItem from="1571765598379" duration="1137000" />
       <workItem from="1572202787591" duration="1298000" />
-      <workItem from="1572379363892" duration="1106000" />
-    </task>
-    <task id="LOCAL-00029" summary="testing the password">
-      <created>1566297766371</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1566297766371</updated>
-    </task>
-    <task id="LOCAL-00030" summary="testing the password">
-      <created>1566299900638</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1566299900638</updated>
+      <workItem from="1572379363892" duration="1700000" />
+      <workItem from="1572732239988" duration="33000" />
     </task>
     <task id="LOCAL-00031" summary="testing the password">
       <created>1566300050095</created>
@@ -487,17 +473,31 @@
       <option name="project" value="LOCAL" />
       <updated>1571432885414</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="add delete column for the model answers table">
+      <created>1572384930223</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1572384930240</updated>
+    </task>
+    <task id="LOCAL-00079" summary="add delete column for the student attendance table">
+      <created>1572385444991</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1572385444991</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40015000" />
+    <option name="totallyTimeSpent" value="40642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -574,12 +574,21 @@
     <MESSAGE value="add model answers page and handling some cases regarding the add model answer model" />
     <MESSAGE value="add group column for the students table" />
     <MESSAGE value="add delete column for the model answers table" />
-    <option name="LAST_COMMIT_MESSAGE" value="add delete column for the model answers table" />
+    <MESSAGE value="add delete column for the student attendance table" />
+    <option name="LAST_COMMIT_MESSAGE" value="add delete column for the student attendance table" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/model-answers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-594" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/attendance_history.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/payment_report.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2627" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/absence_report.php">
@@ -595,25 +604,17 @@
     <entry file="file://$PROJECT_DIR$/guests.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/attendance_history.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/payment_report.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2627" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/students.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
+        <state relative-caret-position="15">
           <caret line="250" column="10" lean-forward="true" selection-start-line="250" selection-start-column="10" selection-end-line="270" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/attendance.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2119">
-          <caret line="200" column="10" selection-start-line="200" selection-start-column="10" selection-end-line="200" selection-end-column="10" />
+        <state relative-caret-position="1263">
+          <caret line="377" column="33" selection-start-line="377" selection-start-column="33" selection-end-line="377" selection-end-column="33" />
         </state>
       </provider>
     </entry>
